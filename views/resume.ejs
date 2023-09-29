@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresher-Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/resume.css">
+</head>
+<body>
+    <div class="main"> 
+        <center><h1>Your Resume</h1></center>
+       <div  class="page1">
+        <center><h1><%= firstname %> <%= lastname %></h1></center>
+        <center><h2><%= jobtitle %></h2></center>
+          <p>Highly skilled Front End Web Developer with a passion for crafting captivating digital
+            experiences. Proficient in JavaScript, CSS, and HTML, with expertise in ScrollTrigger, Swiper JS,
+            Locomotive, and GSAP animation. A creative visionary who translates ideas into stunning
+            projects. Let's innovate the web together!</p>
+        <div class="box-skills">
+            <div class="left">
+                <h1>SKILLS</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <% skills.forEach(function(value) { %>
+                        <li><%= value %></li>
+                      <% }); %>
+                
+                </ul>
+            </div>
+        </div>   
+        <div class="box-education">
+            <div class="left">
+                <h1>EDUCATION</h1>
+            </div>
+            <div class="right">
+                <h1><%= education %></h1>
+                <p><%= college %> </p>
+                <p><%= educationdetials %></p>
+            </div>
+        </div> 
+        <div class="box-projects">
+            <div class="left">
+                <h1>PROJECTS</h1>
+            </div>
+            <div class="right">
+                <ol>
+                    <li><%= project1 %> <i class="ri-arrow-right-up-line"></i></li>
+                    <li><%= project2 %> <i class="ri-arrow-right-up-line"></i></li>
+                    <li><%= project3 %> <i class="ri-arrow-right-up-line"></i></li>
+                    <li><%= project4 %> <i class="ri-arrow-right-up-line"></i></li>
+                </ol>
+            </div>
+        </div> 
+        <div class="box-contact">
+            <div class="left">
+                <h1>CONTACT</h1>
+            </div>
+            <div class="right">
+                <p><i class="ri-mail-fill"></i> <%= email %></p>
+                <p><i class="ri-phone-fill"></i> <%= number %></p>
+                <p><i class="ri-linkedin-box-fill"></i> <%= linkdln %></p>
+                <p><i class="ri-github-fill"></i> <%= github %></p>
+
+            </div>
+        </div>  
+       </div>
+        
+    </div>
+</body>
+</html>

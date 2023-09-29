@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css"
+    />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <style>
+      form{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0%);
+        /* padding: 50px; */
+         width: 40%;
+         display: grid;
+         grid-template-columns: auto ;
+      }
+      form label{
+        font-size: 15px;
+        text-transform: uppercase;
+        /* padding: 20px; */
+        margin-bottom: -20px;
+        letter-spacing: 1px;
+      }
+      form label input{
+        /* margin-bottom: 20px; */
+        /* padding-left: 30px; */
+      font-size: 16px;
+      text-transform: lowercase;
+        width: 100%;
+        padding: 50px;
+        height: 5vh;
+      }
+      form input{
+        /* border: none; */
+        outline: .5px ;
+        outline-color: blue;
+      }
+      .submit{
+        padding: 10px 20px;
+        background-color: rgb(177, 177, 248);
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .submit:hover{
+        background-color: rgb(221, 221, 241);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page1">
+      <center>
+        <h1>Welcome to Resume generator</h1>
+      </center>
+      <form action="/resume" method="post">
+        <label
+          >First name: 
+          
+          <input type="text" name="firstname" placeholder="First Name"
+        /></label> <br>
+        <label>
+          Last name:
+          <input type="text" name="lastname" placeholder="last Name" />
+        </label> <br>
+        <label for=""
+          >Wanted Job Title:
+          <input type="text" name="jobtitle" placeholder="Job title"
+        /></label> <br>
+        <label for=""
+          >Education:
+          <input
+            type="text"
+            name="education"
+            placeholder="BACHELOR OF TECHNOLOGY "
+        /></label> <br>
+        <label for=""
+          >College Name:
+          <input type="text" name="college" placeholder="college name "
+        /></label> <br>
+        <label for=""
+          >Education Details:
+          <input
+            type="text"
+            name="educationdetials"
+            placeholder="RGPV University Bhopal | 2020 - 2024 "
+        /></label> <br>
+        <label for=""
+          >Project-1:
+          <input type="text" name="project1" placeholder="project-1"
+        /></label> <br>
+        <label for=""
+          >Project-2:
+          <input type="text" name="project2" placeholder="project-2"
+        /></label> <br>
+        <label for=""
+          >Project-3:
+          <input type="text" name="project3" placeholder="project-3"
+        /></label> <br>
+        <label for=""
+          >Project-4:
+          <input type="text" name="project4" placeholder="project-4"
+        /></label> <br>
+
+        <label for=""
+          >Email: <input type="email" name="email" placeholder="email "
+        /></label> <br>
+
+        <label for=""
+          >Number: <input type="number" name="number" placeholder="+000000XXXX"
+        /></label> <br>
+        <label for=""
+        >LinkdIn Username: <input type="text" name="linkdln" placeholder="Username""
+      /></label> <br>
+      <label for=""
+      >GitHub Username: <input type="text" name="github" placeholder="Username""
+    /></label> <br>
+    SKILLS
+        <select name="skills" id="skills" multiple>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">Javascript</option>
+          <option value="scrolltrigger">Scrolltrigger</option>
+          <option value="locomotive">Locomotive</option>
+          <option value="swipper">Swipper js</option>
+          <option value="figma">Figma</option>
+        </select>
+        <br>
+
+        <input class="submit" type="submit" />
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+    <script>
+      new MultiSelectTag("skills"); // id
+    </script>
+  </body>
+</html>

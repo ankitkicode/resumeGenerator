@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(206, 191, 191);
+  font-family: gilroy;
+}
+.page1 {
+  height: 150vh;
+  width: 100%;
+  padding:.1px;
+  position: relative;
+  background-color: rgb(230, 228, 228);
+
+}
+.page1 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(206, 191, 191);
+  font-family: gilroy;
+}
+
+.main {
+  overflow:hidden;
+  background-color: rgb(200, 191, 191);
+}
+
+.page1 {
+  height: 190vh;
+  width: 100%;
+  padding:.1px;
+  position: relative;
+}
+.page1 center{
+  margin-top: 2%;
+}
+
+.page1>center h1{
+  font-size: 2vw;
+  text-transform: capitalize;
+  font-family: serif;
+  color: rgb(29, 28, 28);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+
